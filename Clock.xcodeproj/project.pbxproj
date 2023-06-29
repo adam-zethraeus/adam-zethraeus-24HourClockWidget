@@ -17,19 +17,26 @@
 		0232ADE4297C67DA0042D2FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0232ADE3297C67DA0042D2FB /* Assets.xcassets */; };
 		0232ADE6297C67DA0042D2FB /* ClockWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 0232ADE2297C67AE0042D2FB /* ClockWidget.intentdefinition */; };
 		0232ADE7297C67DA0042D2FB /* ClockWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 0232ADE2297C67AE0042D2FB /* ClockWidget.intentdefinition */; };
-		0232ADEA297C67DA0042D2FB /* ClockWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0232ADD5297C67AD0042D2FB /* ClockWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F72CB59D2A4D72B500288CCC /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0232ADD7297C67AD0042D2FB /* WidgetKit.framework */; };
+		F72CB59E2A4D72B500288CCC /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0232ADD9297C67AD0042D2FB /* SwiftUI.framework */; };
+		F72CB5A12A4D72B500288CCC /* Clock24WidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72CB5A02A4D72B500288CCC /* Clock24WidgetBundle.swift */; };
+		F72CB5A32A4D72B500288CCC /* Clock24Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72CB5A22A4D72B500288CCC /* Clock24Widget.swift */; };
+		F72CB5A72A4D72B500288CCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F72CB5A62A4D72B500288CCC /* Assets.xcassets */; };
+		F72CB5AC2A4D72B500288CCC /* Clock24WidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F72CB59C2A4D72B500288CCC /* Clock24WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F72CB5B12A4D735900288CCC /* TimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72CB5B02A4D735400288CCC /* TimelineProvider.swift */; };
+		F72CB5B52A4D74FF00288CCC /* TwentyFourHourClock in Frameworks */ = {isa = PBXBuildFile; productRef = F72CB5B42A4D74FF00288CCC /* TwentyFourHourClock */; };
 		F7AA159E2A289208002D06B2 /* TimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AA159D2A289208002D06B2 /* TimelineProvider.swift */; };
 		F7EAE35F2A28AB0300664B37 /* TwentyFourHourClock in Frameworks */ = {isa = PBXBuildFile; productRef = F7EAE35E2A28AB0300664B37 /* TwentyFourHourClock */; };
 		F7EAE3612A28AB0B00664B37 /* TwentyFourHourClock in Frameworks */ = {isa = PBXBuildFile; productRef = F7EAE3602A28AB0B00664B37 /* TwentyFourHourClock */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0232ADE8297C67DA0042D2FB /* PBXContainerItemProxy */ = {
+		F72CB5AA2A4D72B500288CCC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0232ADB8297C676C0042D2FB /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0232ADD4297C67AD0042D2FB;
-			remoteInfo = ClockWidgetExtension;
+			remoteGlobalIDString = F72CB59B2A4D72B500288CCC;
+			remoteInfo = Clock24WidgetExtension;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -40,7 +47,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				0232ADEA297C67DA0042D2FB /* ClockWidgetExtension.appex in Embed Foundation Extensions */,
+				F72CB5AC2A4D72B500288CCC /* Clock24WidgetExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -60,6 +67,13 @@
 		0232ADE2297C67AE0042D2FB /* ClockWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = ClockWidget.intentdefinition; sourceTree = "<group>"; };
 		0232ADE3297C67DA0042D2FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0232ADE5297C67DA0042D2FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F72CB59C2A4D72B500288CCC /* Clock24WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Clock24WidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F72CB5A02A4D72B500288CCC /* Clock24WidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clock24WidgetBundle.swift; sourceTree = "<group>"; };
+		F72CB5A22A4D72B500288CCC /* Clock24Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clock24Widget.swift; sourceTree = "<group>"; };
+		F72CB5A62A4D72B500288CCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F72CB5A82A4D72B500288CCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F72CB5A92A4D72B500288CCC /* Clock24Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Clock24Widget.entitlements; sourceTree = "<group>"; };
+		F72CB5B02A4D735400288CCC /* TimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineProvider.swift; sourceTree = "<group>"; };
 		F7AA159D2A289208002D06B2 /* TimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineProvider.swift; sourceTree = "<group>"; };
 		F7EAE35D2A28AAED00664B37 /* TwentyFourHourClock */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = TwentyFourHourClock; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,6 +97,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F72CB5992A4D72B500288CCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F72CB59E2A4D72B500288CCC /* SwiftUI.framework in Frameworks */,
+				F72CB5B52A4D74FF00288CCC /* TwentyFourHourClock in Frameworks */,
+				F72CB59D2A4D72B500288CCC /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -92,6 +116,7 @@
 				F7EAE35D2A28AAED00664B37 /* TwentyFourHourClock */,
 				0232ADC2297C676C0042D2FB /* Clock */,
 				0232ADDB297C67AD0042D2FB /* ClockWidget */,
+				F72CB59F2A4D72B500288CCC /* Clock24Widget */,
 				0232ADD6297C67AD0042D2FB /* Frameworks */,
 				0232ADC1297C676C0042D2FB /* Products */,
 			);
@@ -102,6 +127,7 @@
 			children = (
 				0232ADC0297C676C0042D2FB /* Clock.app */,
 				0232ADD5297C67AD0042D2FB /* ClockWidgetExtension.appex */,
+				F72CB59C2A4D72B500288CCC /* Clock24WidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -146,6 +172,19 @@
 			path = ClockWidget;
 			sourceTree = "<group>";
 		};
+		F72CB59F2A4D72B500288CCC /* Clock24Widget */ = {
+			isa = PBXGroup;
+			children = (
+				F72CB5A02A4D72B500288CCC /* Clock24WidgetBundle.swift */,
+				F72CB5A22A4D72B500288CCC /* Clock24Widget.swift */,
+				F72CB5A62A4D72B500288CCC /* Assets.xcassets */,
+				F72CB5A82A4D72B500288CCC /* Info.plist */,
+				F72CB5A92A4D72B500288CCC /* Clock24Widget.entitlements */,
+				F72CB5B02A4D735400288CCC /* TimelineProvider.swift */,
+			);
+			path = Clock24Widget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -161,7 +200,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				0232ADE9297C67DA0042D2FB /* PBXTargetDependency */,
+				F72CB5AB2A4D72B500288CCC /* PBXTargetDependency */,
 			);
 			name = Clock;
 			packageProductDependencies = (
@@ -191,6 +230,26 @@
 			productReference = 0232ADD5297C67AD0042D2FB /* ClockWidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		F72CB59B2A4D72B500288CCC /* Clock24WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F72CB5AD2A4D72B500288CCC /* Build configuration list for PBXNativeTarget "Clock24WidgetExtension" */;
+			buildPhases = (
+				F72CB5982A4D72B500288CCC /* Sources */,
+				F72CB5992A4D72B500288CCC /* Frameworks */,
+				F72CB59A2A4D72B500288CCC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Clock24WidgetExtension;
+			packageProductDependencies = (
+				F72CB5B42A4D74FF00288CCC /* TwentyFourHourClock */,
+			);
+			productName = Clock24WidgetExtension;
+			productReference = F72CB59C2A4D72B500288CCC /* Clock24WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -198,7 +257,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1420;
+				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				ORGANIZATIONNAME = GoodHatsLLC;
 				TargetAttributes = {
@@ -207,6 +266,9 @@
 					};
 					0232ADD4297C67AD0042D2FB = {
 						CreatedOnToolsVersion = 14.2;
+					};
+					F72CB59B2A4D72B500288CCC = {
+						CreatedOnToolsVersion = 15.0;
 					};
 				};
 			};
@@ -225,6 +287,7 @@
 			targets = (
 				0232ADBF297C676C0042D2FB /* Clock */,
 				0232ADD4297C67AD0042D2FB /* ClockWidgetExtension */,
+				F72CB59B2A4D72B500288CCC /* Clock24WidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -244,6 +307,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0232ADE4297C67DA0042D2FB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F72CB59A2A4D72B500288CCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F72CB5A72A4D72B500288CCC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,13 +341,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F72CB5982A4D72B500288CCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F72CB5A32A4D72B500288CCC /* Clock24Widget.swift in Sources */,
+				F72CB5A12A4D72B500288CCC /* Clock24WidgetBundle.swift in Sources */,
+				F72CB5B12A4D735900288CCC /* TimelineProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0232ADE9297C67DA0042D2FB /* PBXTargetDependency */ = {
+		F72CB5AB2A4D72B500288CCC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0232ADD4297C67AD0042D2FB /* ClockWidgetExtension */;
-			targetProxy = 0232ADE8297C67DA0042D2FB /* PBXContainerItemProxy */;
+			target = F72CB59B2A4D72B500288CCC /* Clock24WidgetExtension */;
+			targetProxy = F72CB5AA2A4D72B500288CCC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -338,7 +419,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
+				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -394,7 +475,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				SDKROOT = iphoneos;
+				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
@@ -429,7 +510,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = llc.goodhats.clock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -469,7 +550,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = llc.goodhats.clock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -500,13 +581,14 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = llc.goodhats.clock.widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -532,16 +614,82 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = llc.goodhats.clock.widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F72CB5AE2A4D72B500288CCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = Clock24Widget/Clock24Widget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QC68T7ZF53;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Clock24Widget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Clock24Widget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 GoodHatsLLC. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = llc.goodhats.clock.Clock24Widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx14.0;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F72CB5AF2A4D72B500288CCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = Clock24Widget/Clock24Widget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QC68T7ZF53;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Clock24Widget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Clock24Widget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 GoodHatsLLC. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = llc.goodhats.clock.Clock24Widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx14.0;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -575,9 +723,22 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		F72CB5AD2A4D72B500288CCC /* Build configuration list for PBXNativeTarget "Clock24WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F72CB5AE2A4D72B500288CCC /* Debug */,
+				F72CB5AF2A4D72B500288CCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		F72CB5B42A4D74FF00288CCC /* TwentyFourHourClock */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TwentyFourHourClock;
+		};
 		F7EAE35E2A28AB0300664B37 /* TwentyFourHourClock */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = TwentyFourHourClock;
